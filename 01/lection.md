@@ -17,13 +17,23 @@ Plugin RESTED - https://chromewebstore.google.com/detail/rested/eelcnbccaccipfol
 Úkoly:
 - Získejte jeden náhodný fakt o kočkách
 - Získejte 25 náhodných faktů v jednom API call
-- Zjistěte co říká fact s ID `5c609945e549020014533037`
-- V jednom API call stáhněte fakta s ID:
+- Zjistěte co říkají fakta s ID:
   - `5a4aab2c2c99ee00219e11c4`
   - `5c609945e549020014533037`
   - `591f98783b90f7150a19c199`
 
-Řešení:
+### Python
+
+Requests: HTTP for Humans - https://requests.readthedocs.io/en/latest/
+
+Nainstalujte do venv pomocí `python -m pip install requests`
+
+Vyřešte úkoly z předchozí sekce pomocí pythinu a knihovny `requests`
+
+## Řešení
+
+### Browser
+
 - Získejte jeden náhodný fakt o kočkách - API obsahuje hromadu nepěkných dat
 ```
 GET https://cat-fact.herokuapp.com/facts/random
@@ -273,9 +283,9 @@ GET https://cat-fact.herokuapp.com/facts/591f98783b90f7150a19c199
 }
 ```
 
-### Python requests
+### Python
 
-Requests: HTTP for Humans - https://requests.readthedocs.io/en/latest/
+Řešení naleznete v souboru `cats.py`
 
 ## Ostatní
 
